@@ -35,7 +35,7 @@
 <template>
   <c-message-service boundary={uniqueBoundary}></c-message-service>
 
-  <lightning-card icon-name={iconName}>
+  <lightning-card icon-name={iconName} style="border-table slds-card_boundary">
     <div slot="title">
       <slot name="composedTitle">
         <template if:true={showRecordCount}> {title} {recordCountDisplay} </template>
